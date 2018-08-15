@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>FormGet PhoneGap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Stylesheet Files : jQuery Mobile CSS File, Customized CSS File -->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+<link rel="stylesheet" href="css/my.css">
+
+<!--jQuery Files : jQuery Library File, jQuery Mobile JS File, Customized JS File -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+<script src="js/map.js"></script>
+</head>
+
+<!--Beginning of the Body-->
+<body>
+<div data-role="page">
+
+<!-- Header Bar-->
+<div data-role="header" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner">
+<h1>Around Me</h1>
+</div>
+<div data-role="main" class="ui-content" id="main">
+<center><img style="text-align: center" src="img/logo.jpg"/></center>
+<label id="whatsearch" for="search" style="text-align: center;">What Would You Like To Search?</label>
+
+<!--Drop Down Select Option-->
+<select name="search" id="choice" data-native-menu="false">
+<option value="atm">ATM</option>
+<option value="hospital">Hospital</option>
+<option value="restaurant">Restaurant</option>
+</select>
+
+<!--Search Button-->
+<button id="searchbutton" class="ui-btn" onclick="Myfunc()">Search</button>
+</div>
+</div>
+</body>
+<!--End of the Body-->
+</html>
